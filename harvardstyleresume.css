@@ -8,6 +8,10 @@ h1, h2, h3, h6 {
 	text-align: center;
 }
 
+.divmod{
+	height: 50%;
+}
+
 .section1 {
 	display: flex;
 	justify-content: center;
@@ -95,16 +99,15 @@ h1, h2, h3, h6 {
 }
 
 .section10 {
+	border: 20px;
+	margin: 20px;
+	height: 15px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .section10sub {
 	display: inline-flex;
-}
-.section10space {
-	display: flex;
-	justify-content: space-between;
 }
 
 .section11 {
