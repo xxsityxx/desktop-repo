@@ -1,0 +1,120 @@
+body {
+    display: auto;
+ 
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.buildings-image {
+    background-image: url("images/sergio-capuzzimati-oBCH2XzHv5g-unsplash.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;        
+}
+
+h1 {
+    font-family: 'matrixregular';
+    color: cornsilk;
+    text-align: center;
+    text-shadow: 10px 15px 18px rgb(0, 73, 0);
+    
+}
+
+.divgroup0 {
+    display: flex;
+    justify-content: left;
+    font-family: monospace;
+}
+
+
+
+.divgroup1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 200px;
+}
+
+
+.container1 {
+    position: relative;
+    border-radius: 40%;
+    box-shadow: 10px 15px 18px;
+    display: flex;
+    border: 2px solid black;    
+}
+
+.container2 {
+    position: relative;
+    border-radius: 40%;
+    box-shadow: 10px 15px 18px;
+    display: flex;
+    border: 2px solid black;      
+}
+.overlaybluepill {
+    position: absolute;
+    border-radius: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008bba9c;
+}
+
+.overlayredpill {
+    position: absolute;
+    border-radius: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #300808bb;
+}
+  
+.container1:hover .overlayredpill {
+    opacity: 1;
+}
+
+.container2:hover .overlaybluepill {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 40%;
+}
+
+@font-face {
+    font-family: 'matrixregular';
+    src: url(fonts/matrix-webfont.woff2) format('woff2'),
+         url(fonts/matrix-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
