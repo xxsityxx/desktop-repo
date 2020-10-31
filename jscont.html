@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <script>         
+
+        </script>
+
+
+    </head>
+
+        <body>
+          <script>
+                
+                        // HTMLBodyElement, now it exists
+            </script>
+        <div id="elem">
+            <div id="elem-content">Begin</div>
+        </div>
+        <script>
+            let elem = document.getElementById('elem');
+            elem.style.background = 'red';
+        </script>
+
+        <ul>
+            <li>Information</li>
+        </ul>
+
+        <div>End</div>
+
+        <script>
+
+        </script>
+
+        <script>
+            let div = document.createElement('div');
+
+            div.className = "alert alert-success";
+            div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+
+            document.body.appendChild(div);
+
+
+
+        </script>
+
+        <div id="bye">
+            <ol id="ol">
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+            </ol>
+        </div>
+
+        
+        <script>
+            ol.before('before');
+            ol.after('after');
+
+            let prepend = document.createElement('li');
+            prepend.innerHTML = 'prepend';
+            ol.prepend(prepend);
+
+            let append = document.createElement('li');
+            append.innerHTML = 'append';
+            ol.append(append);
+        </script>
+
+
+
+
+
+
+
+
+        <input type="button" onClick="deletelist()"
+        value="BYE BYE">
+
+        
+
+        <script>
+            
+
+            
+            function deletelist() {
+                let listdiv = document.getElementById("bye");
+                listdiv.remove();
+            }
+                
+
+        
+            // homework for 10/30 ^^^^^^
+        </script>
+
+        
+
+
+
+
+
+        <script>
+            function countSheep() {
+                for(let i=1; i<=3; i++) {
+                    alert("sheep number" + i);
+            }
+        }
+        </script>
+
+            <input type="button" onClick="countSheep()"
+            value="Count sheep!">
+
+            <button onclick="alert(this.innerHTML)">Click me</button>
+
+            <input id="elem" type="button" value="click me"/>
+
+            <script>
+                function handler1() {
+                    alert('thanks!');
+                };
+
+                function handler2() {
+                    alert('thanks again!');
+                }
+
+                elem.onclick = () => alert("hello");
+                elem.addEventListener("click", handler1);
+                elem.addEventListener("click", handler2);
+            </script>
+
+       
+
+
+
+
+        </body>
+</html>
